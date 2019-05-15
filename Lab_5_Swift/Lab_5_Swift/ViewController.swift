@@ -67,15 +67,20 @@ class ViewController: UIViewController {
         let auto = Auto(speed: 100, price: 20)
         
         print("Times: ")
-        
+        airplane.show()
         airplane.calculateTimeFor(distance: 800)
+        train.show()
         train.calculateTimeFor(distance: 800)
+        auto.show()
         auto.calculateTimeFor(distance: 800)
         
         print("Prices: ")
         
+        airplane.show()
         airplane.calculatePriceFor(distance: 800)
+        train.show()
         train.calculatePriceFor(distance: 800)
+        auto.show()
         auto.calculatePriceFor(distance: 800)
         
     }

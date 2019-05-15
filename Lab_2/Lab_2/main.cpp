@@ -247,7 +247,9 @@ void change(Fraction *array, int count) {
 
 int main(int argc, const char * argv[]) {
     
-    Fraction fractions [4] = {Fraction(1,3), Fraction(1,3), Fraction(1,5), Fraction(2,5)};
+    Fraction fractions [4];// = {Fraction(1,3), Fraction(1,3), Fraction(1,5), Fraction(2,5)};
+    for (int i = 0; i < 4; i++)
+        fractions[i].Enter();
     
     change(fractions, 4);
     
